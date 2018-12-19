@@ -1,0 +1,27 @@
+
+body, h1, h2, h3, p, a {
+  font-family: Anonymous Pro, 'Anonymous Pro', sans-serif;
+  color: black;
+}
+
+.btn {
+  font-family: Anonymous Pro, 'Anonymous Pro', sans-serif;
+  border-radius: 50px;
+  background-color: black;
+  border: none;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.site-heading {
+  min-width: 690px;
+}
