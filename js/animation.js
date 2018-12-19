@@ -28,7 +28,7 @@ $(document).ready(function() {
     else if (clickCount == 1) {
       joke.text("Justin Case-you-didn't-find-this-funny-here-are-some-reasons-why-you-might-still-want-to-work-with-me");
       joke.animate({fontSize: "55px"}, 0);
-      $("span.subheading p").text("This better be good");
+      $("span.subheading p").text("This better be good...");
     }
   });
 
