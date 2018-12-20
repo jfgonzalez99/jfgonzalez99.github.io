@@ -26,9 +26,13 @@ $(document).ready(function() {
       clickCount++;
     }
     else if (clickCount == 1) {
-      joke.text("Justin \"Case-you-still-aren't-convinced-here-are-some-reasons-why-you-might-want-to-work-with-me\" Gonzalez"); 
+      joke.text("Justin \"Case-you-still-aren't-convinced-here-are-some-reasons-why-you-might-want-to-work-with-me\" Gonzalez");
       joke.animate({fontSize: "55px"}, 0);
       $("span.subheading p").text("This better be good...");
+      clickCount++;
+    }
+    else {
+      window.location.href = "about.html";
     }
   });
 

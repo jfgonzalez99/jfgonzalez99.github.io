@@ -25,3 +25,14 @@ button:focus {
 .site-heading {
   min-width: 690px;
 }
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+.page-heading img {
+  width: 55%;
+}
