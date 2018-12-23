@@ -1,38 +1,99 @@
 
-body, h1, h2, h3, p, a {
-  font-family: Anonymous Pro, 'Anonymous Pro', sans-serif;
+body {
+  font-family: 'Anonymous Pro', monospace;
+  background: white;
   color: black;
+  text-align: center;
 }
 
-.btn {
-  font-family: Anonymous Pro, 'Anonymous Pro', sans-serif;
-  border-radius: 50px;
-  background-color: black;
-  border: none;
+h1 {
+  font-size: 120px;
 }
 
-button:focus {
-  outline: none !important;
+.section-div {
+  height: 90%;
+  max-width: 90%;
 }
 
-.vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+.horizontal-half {
+  height: 50%;
 }
 
-.site-heading {
-  min-width: 690px;
+.blue-div {
+  background: #7FA3D6;
+  margin: 0 auto;
 }
 
-#cf {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
+.light-div {
+  background: rgb(248,248,248);
+  margin: 0 auto;
 }
 
-.page-heading img {
-  width: 55%;
+#menu {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 42px;
+  top: 0;
+  margin: 0;
+  margin-left: 5%;
+  z-index: 9;
+  text-align: left;
+  padding: 8px;
+}
+
+#menu a {
+  color: black;
+  font-size: 20px;
+  margin-top: 50%;
+}
+
+#my-logo {
+  height: 30px;
+}
+
+#hello {
+  transform: translateY(183%);
+}
+
+#world {
+  transform: translateY(-12%);
+}
+
+#first-top {
+  border-radius: 20px 20px 0px 0px;
+}
+
+#first-bottom {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.accent {
+  color: #E77368;
+}
+
+/* fullPage css */
+.fp-scroller {
+    overflow:hidden;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #E77368;
+    width: 8px;
+    height: 8px;
+    /* margin: -4px 0 0 -4px; */
+    margin-right: -15px;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    width: 16px;
+    height: 16px;
+    /* margin: -8px 0 0 -8px; */
+    margin-right: -15px;
+    box-sizing: border-box;
+    background-color: #E77368;
 }

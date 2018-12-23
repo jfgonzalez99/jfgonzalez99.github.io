@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Justin F. Gonzalez">
-
+<head>
+    <meta charset="UTF-8">
     <title>Justin Gonzalez</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/small_logo.png">
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href='fonts/Anonymous Pro.ttf' rel='stylesheet' type='text/css'>
-
-    <!-- Custom styles for this template -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-  </head>
-
-  <body>
-
-    <!-- Page Header -->
-    <header class="masthead" style="background: none">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto vertical-center justify-content-center">
-            <div class="site-heading">
-              <h1 style="opacity: 0; font-size: 0px;">*Knock, Knock*</h1>
-              <span class="subheading" style="opacity: 0; cursor: pointer;"><p>
-                ...Who's there..?
-              </p></span>
+    <link rel="shortcut icon" href="img/small_logo.ico">
+</head>
+<body>
+    <nav id="menu">
+      <a href="#hello" style="text-decoration: none"><img id="my-logo" src="img/8-bit-avatar-bw.png" alt="Justin Gonzalez"> Justin Gonzalez</a>
+    </nav>
+    <div id="fullpage">
+        <!--Welcome-->
+        <section class="vertical-scrolling fp-auto-height-responsive" id="1">
+            <div class="container section-div">
+              <div class="row horizontal-half">
+                <div id="first-top" class="col-md-12 blue-div">
+                  <h1 id="hello">Hello</h1>
+                </div>
+              </div>
+              <div class="row horizontal-half">
+                <div id="first-bottom" class="col-md-12 light-div">
+                  <h1 id="world">World</h1>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </header>
+        </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- About me -->
+        <section class="vertical-scrolling fp-auto-height-responsive" id="2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-head">
+                          <h2>Our Project</h2>
+                        </div>
+                        <div class="info"><p><b>Music is a universal language.</b> It brings us joy, triggers memories, and encourages us to
+                        dance. Our music listening habits reflect our lives: what time of year it is, what mood we're in,
+                        what language we speak, or how energetic we may be. <br><br>
+                        This is why we're interested in exploring music data. To explore what others are listening to is to
+                        explore so much more about how people are feeling right now. <b>Which countries listen to the same
+                                songs</b> and what might that say about the state of those areas? <b>Which artists are popular globally</b>
+                        and what is it that makes them so universally loved? We hope to dive into these questions and more
+                            as we take you through the <b>top songs</b> in each of the <b>61 countries</b> that listen to Spotify.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/clean-blog.min.js"></script>
+    </div>
 
-    <!-- Animation script -->
-    <script src="js/animation.js"></script>
 
-  </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3-tip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
 
+    <!-- JS Visualizations -->
+    <script src="js/main.js"></script>
+
+</body>
 </html>
