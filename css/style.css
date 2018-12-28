@@ -52,24 +52,24 @@ h1 {
   height: 30px;
 }
 
-#hello {
-  transform: translateY(183%);
-}
-
-#world {
-  transform: translateY(-12%);
-}
-
-#first-top {
+.top-half {
   border-radius: 20px 20px 0px 0px;
 }
 
-#first-bottom {
+.bottom-half {
   border-radius: 0px 0px 20px 20px;
 }
 
 .accent {
   color: #E77368;
+}
+
+div.top-half div#hello {
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+  left: 0;
+  text-align: center;
 }
 
 /* fullPage css */
@@ -83,7 +83,7 @@ h1 {
     width: 8px;
     height: 8px;
     /* margin: -4px 0 0 -4px; */
-    margin-right: -15px;
+    /* margin-right: -15px; */
 }
 
 #fp-nav ul li a.active span,
@@ -93,7 +93,7 @@ h1 {
     width: 16px;
     height: 16px;
     /* margin: -8px 0 0 -8px; */
-    margin-right: -15px;
+    /* margin-right: -15px; */
     box-sizing: border-box;
     background-color: #E77368;
 }
