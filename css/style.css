@@ -47,12 +47,23 @@ h1 {
   text-align: center;
 }
 
-.vertical-center {
+/* .vertical-center {
   height: 100%;
 }
 
-.vertical-center h1 {
-  transform: translateY(80%);
+.vertical-center h1, .vertical-center p {
+  top: 50%;
+  transform: translateY(50%);
+} */
+
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
 }
 
 #menu a {
@@ -63,7 +74,7 @@ h1 {
 #my-logo {
   height: 3.5vh;
   /* transform: translateY(-15%); */
-  transform: translate(-1250%,-15%);
+  transform: translate(0%,-15%);
 }
 
 #nav-container {
