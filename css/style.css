@@ -73,6 +73,8 @@ div.top-half div#hello {
   height: 100%;
 }
 
+/****** Thirds ******/
+
 /****** Banner ******/
 #menu {
   position: fixed;
@@ -116,6 +118,11 @@ div.top-half div#hello {
   margin: 0 auto;
 }
 
+.info {
+  max-width: 291px;
+  text-align: justify;
+}
+
 /****** Unordered list ******/
 ul.traits {
   list-style-type: none;
@@ -123,19 +130,19 @@ ul.traits {
   font-size: 28px;
 }
 
-li#se {
+li.se {
   color: #E77368;
 }
 
-li#ds {
+li.ds {
   color: #7DCAA7;
 }
 
-li#des {
+li.des {
   color: #FBCC42;
 }
 
-li#cre {
+li.cre {
   color: #7FA3D6;
 }
 
@@ -161,4 +168,14 @@ li#cre {
     margin: -8px 0 0 -8px;
     box-sizing: border-box;
     background-color: #E77368;
+}
+
+.fp-controlArrow {
+  transform: scale(0.6);
+}
+.fp-controlArrow.fp-prev {
+  transform: translateX(100px);
+}
+.fp-controlArrow.fp-next {
+  transform: translateX(-100px);
 }
