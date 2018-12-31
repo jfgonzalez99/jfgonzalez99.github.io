@@ -9,7 +9,8 @@ $(document).ready(function() {
         controlArrows: true,
         menu: '#myNavbar',
         touchSensitivity: 50,
-        anchors: ['hello', 'about-me', 'my-projects', 'contact-me']
+        anchors: ['hello', 'about-me', 'my-projects', 'contact-me'],
+        navigationTooltips: ['Hello', 'About Me', 'My Projects', 'Contact Me']
     });
 
 });

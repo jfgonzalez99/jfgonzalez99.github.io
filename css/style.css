@@ -15,6 +15,10 @@ h2 {
   font-size: 80px;
 }
 
+h3 {
+  font-size: 36px;
+}
+
 p {
   font-size: 18px;
 }
@@ -61,7 +65,15 @@ p {
   border-radius: 0px 20px 20px 0px;
 }
 
-div.top-half div#hello {
+.bottom-left {
+  border-radius: 0px 0px 0px 20px;
+}
+
+.bottom-right {
+  border-radius: 0px 0px 20px 0px;
+}
+
+div.top-half div.hello {
 	position: absolute;
 	bottom: 0px;
 	right: 0;
@@ -74,6 +86,19 @@ div.top-half div#hello {
 }
 
 /****** Thirds ******/
+.top-third {
+  height: 25%;
+}
+
+.bottom-thirds {
+  height: 75%;
+}
+
+.description {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
 
 /****** Banner ******/
 #menu {
@@ -142,7 +167,7 @@ li.des {
   color: #FBCC42;
 }
 
-li.cre {
+li.chr {
   color: #7FA3D6;
 }
 
@@ -170,12 +195,31 @@ li.cre {
     background-color: #E77368;
 }
 
-.fp-controlArrow {
-  transform: scale(0.6);
-}
-.fp-controlArrow.fp-prev {
-  transform: translateX(100px);
+/* .fp-controlArrow.fp-prev {
+    left: 0;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(left-arrow.png) no-repeat;
+    cursor: pointer;
+    transform: scale(0.5);
+    transform: translateX(100px);
 }
 .fp-controlArrow.fp-next {
-  transform: translateX(-100px);
+    right: 0;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(right-arrow.png) no-repeat;
+    cursor: pointer;
+    transform: scale(0.5);
+    transform: translateX(-100px);
+} */
+
+.fp-tooltip {
+  background: #E77368;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  transform: translateY(-1px);
 }
