@@ -23,6 +23,15 @@ p {
   font-size: 18px;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: #E77368;
+  text-decoration: none;
+}
+
 /****** Halves ******/
 .section-div {
   height: 85%;
@@ -98,6 +107,19 @@ div.top-half div.hello {
   margin-left: 10px;
   margin-right: 10px;
   padding: 10px;
+  padding-top: 30px;
+}
+
+.description img {
+  width: 320px;
+  border-radius: 5px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.description img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 /****** Banner ******/
@@ -141,6 +163,7 @@ div.top-half div.hello {
 
 .center {
   margin: 0 auto;
+  text-align: center;
 }
 
 .info {
