@@ -13,7 +13,17 @@ $(document).ready(function() {
         navigationTooltips: ['Hello', 'About Me', 'My Projects', 'Contact Me']
     });
 
+    $('#witw').mouseover(function() {
+      $('#witw-info').text('Which artists are popular globally and what is it that makes them so universally loved? For this project, my team and I used Spotify data and data visualization techniques to analyze popular music around the world and find a common thread among popular music around the world.');
+    });
+
+    $('#witw').mouseout(function() {
+      $('#witw-info').text('...');
+    });
+
 });
+
+
 
 function helloWorld() {
   var me = {
@@ -26,6 +36,8 @@ function helloWorld() {
     },
     interests: ['puzzles', 'photography', 'movies', 'Chance the Rapper']
   }
+
+
 
   console.log(me.education.school);
 }
