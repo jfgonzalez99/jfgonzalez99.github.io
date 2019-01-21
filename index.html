@@ -21,17 +21,10 @@
     <div id="fullpage">
         <!--Welcome-->
         <section class="vertical-scrolling fp-auto-height-responsive" id="1">
-            <div class="container section-div">
-              <div class="row horizontal-half">
-                <div class="top-half col-md-12 blue-div">
-                  <div class="hello">
-                    <h1>Hello</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="row horizontal-half">
-                <div class="bottom-half col-md-12 light-div">
-                  <h1 id="world">World</h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1><span class="function">helloWorld</span>(){</h1>
                 </div>
               </div>
             </div>
@@ -39,25 +32,20 @@
 
         <!-- About me -->
         <section class="vertical-scrolling fp-auto-height-responsive" id="2">
-          <div class="container section-div">
-              <div class="row vertical-halves">
-                  <div class="align-items-center d-flex col-md-6 left-half blue-div center">
-                    <div class="center">
-                      <h2>Who Am I?</h2>
-                    </div>
-                  </div>
-                  <div class="align-items-center d-flex col-md-6 right-half light-div">
-                    <div class="center info">
-                      <p>My name is <b>Justin</b>, and I am a</p>
-                      <ul class="traits">
-                        <li class="se">Software Engineer</li>
-                        <li class="ds">Data Scientist</li>
-                        <li class="des">Designer</li>
-                        <li class="chr">Christian</li>
-                      </ul>
-                      <p>I was born in Providence, RI,<br>raised in Hendersonville, NC,<br>and I am in my second year studying Applied Mathematics at Harvard College.</p>
-                    </div>
-                  </div>
+          <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2><span class="var">var</span> me = {</h2>
+                  <h3><span class="property">name</span>: <span class="string">'Justin'</span>,<br>
+                    <span class="property">home</span>: <span class="string">'Hendersonville, NC'</span>,<br>
+                    <span class="property">education</span>: {<br>
+                      <span class="indent"><span class="property">school</span>: <span class="string">'Harvard College'</span>,</span><br>
+                      <span class="indent"><span class="property">class</span>: <span class="int">2021</span>,</span><br>
+                      <span class="indent"><span class="property">concentration</span>: <span class="string">'Applied Mathematics'</span></span><br>
+                    },<br>
+                    <span class="property">interests</span>: [<span class="string">'puzzles'</span>, <span class="string">'photography'</span>, <span class="string">'movies'</span>, <span class="string">'Chance the Rapper'</span>]</h3>
+                  <h2>}</h2>
+                </div>
               </div>
           </div>
         </section>
@@ -121,7 +109,6 @@
     <script src="js/d3-tip.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
 
-    <!-- JS Visualizations -->
     <script src="js/main.js"></script>
 
 </body>

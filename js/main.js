@@ -14,3 +14,20 @@ $(document).ready(function() {
     });
 
 });
+
+function helloWorld() {
+  var me = {
+    name: 'Justin',
+    home: 'Hendersonville, NC',
+    education: {
+      school: 'Harvard College',
+      class: 2021,
+      concentration: 'Applied Mathematics: Data Science'
+    },
+    interests: ['puzzles', 'photography', 'movies', 'Chance the Rapper']
+  }
+
+  console.log(me.education.school);
+}
+
+helloWorld();

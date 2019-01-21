@@ -2,9 +2,9 @@
 /****** Elements ******/
 body {
   font-family: 'Anonymous Pro', monospace;
-  background: white;
-  color: black;
-  text-align: center;
+  background: #2B303B;
+  color: #DFE1E8;
+  text-align: left;
 }
 
 h1 {
@@ -12,11 +12,13 @@ h1 {
 }
 
 h2 {
-  font-size: 80px;
+  font-size: 50px;
+  margin-left: 40px;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 40px;
+  margin-left: 80px;
 }
 
 p {
@@ -24,12 +26,33 @@ p {
 }
 
 a {
-  color: black;
+  color: #DFE1E8;
 }
 
 a:hover {
   color: #E77368;
   text-decoration: none;
+}
+
+/* Syntax highlighting */
+.function {
+  color: #8FA1B3;
+}
+.var {
+  color: #A091C8;
+}
+.string {
+  color: #A3BE8C;
+}
+.int {
+  color: #D08770;
+}
+.property {
+  color: #BF616A;
+}
+
+.indent {
+  margin-left: 40px;
 }
 
 /****** Halves ******/
@@ -130,10 +153,11 @@ div.top-half div.hello {
   height: 7%;
   z-index: 9;
   text-align: center;
+  background: #DFE1E8;
 }
 
 #menu a {
-  color: black;
+  color: #2B303B;
   font-size: 2.5vh;
 }
 
@@ -201,7 +225,7 @@ li.chr {
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    background: #E77368;
+    background: #B48EAD;
     width: 8px;
     height: 8px;
     margin: -4px 0 0 -4px;
@@ -215,32 +239,11 @@ li.chr {
     height: 16px;
     margin: -8px 0 0 -8px;
     box-sizing: border-box;
-    background-color: #E77368;
+    background-color: #B48EAD;
 }
-
-/* .fp-controlArrow.fp-prev {
-    left: 0;
-    border: none;
-    width: 50px;
-    height: 101px;
-    background: url(left-arrow.png) no-repeat;
-    cursor: pointer;
-    transform: scale(0.5);
-    transform: translateX(100px);
-}
-.fp-controlArrow.fp-next {
-    right: 0;
-    border: none;
-    width: 50px;
-    height: 101px;
-    background: url(right-arrow.png) no-repeat;
-    cursor: pointer;
-    transform: scale(0.5);
-    transform: translateX(-100px);
-} */
 
 .fp-tooltip {
-  background: #E77368;
+  background: #B48EAD;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
