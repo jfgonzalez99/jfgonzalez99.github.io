@@ -8,7 +8,7 @@ $(document).ready(function() {
         css3: true,
         controlArrows: true,
         menu: '#myNavbar',
-        touchSensitivity: 50,
+        touchSensitivity: 15,
         anchors: ['hello', 'about-me', 'my-projects', 'contact-me'],
         navigationTooltips: ['Hello', 'About Me', 'My Projects', 'Contact Me']
     });
