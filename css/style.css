@@ -37,6 +37,14 @@ a span:hover {
   color: #EBCB8B;
 }
 
+a i {
+  color: #DFE1E8;
+}
+
+a i:hover {
+  color: #8FA1B3;
+}
+
 /****** Syntax highlighting ******/
 .function {
   color: #8FA1B3;
@@ -57,9 +65,33 @@ a span:hover {
   color: #EBCB8B;
 }
 
+
 .indent {
   margin-left: 40px;
 }
+
+
+::selection {
+  background: #C0C5CE; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #C0C5CE; /* Gecko Browsers */
+}
+
+
+#contact {
+  font-size: 100px;
+}
+
+#witw {
+  cursor: pointer;
+}
+
+.fixed {
+  position: fixed;
+  transform: translateY(-50%);
+}
+
 
 /****** Banner ******/
 #menu {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Justin Gonzalez</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -55,18 +55,29 @@
 
         <!-- Projects -->
         <section class="vertical-scrolling fp-auto-height-responsive" id="3">
-            <div class="container">
+            <div class="container fixed">
               <div class="row">
                 <div class="col-md-12">
-                  <h2><span class="function">myProjects</span>(){</h2>
+                  <h2><span class="function">open</span>(<span class="input">project</span>){</h2>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12">
-
-                  <h3><a href="https://maxnoahb.github.io/CS171-Final-Project-Spotify/" target="_blank"><span class="function">whatInTheWorld</span></a>()<span id="witw">{<span id="witw-info" class="input">...</span>}</span></h3>
-                  <h3><a href="https://jfgonzalez99.github.io/StraddlingBoundaries/" target="_blank"><span class="function">straddlingBoundaries</span></a>(){<span class="input">...</span>}</h3>
-                  <h3><span class="function">bostonAuxilium</span>(){<span class="input">...</span>}</h3>
+                  <h3>
+                    <span id="witw">
+                      <span class="var">if</span> (<span class="input">project</span> == <span class="string">'What in the World Are You Listening To?'</span>){<span id="witw-info">...</span>}
+                    </span>
+                  </h3>
+                  <h3>
+                    <span id="sb">
+                      <span class="var">if</span> (<span class="input">project</span> == <a href="https://jfgonzalez99.github.io/StraddlingBoundaries/" target="_blank"><span class="string">'Straddling Boundaries'</span></a>){<span id="sb-info">...</span>}
+                    </span>
+                  </h3>
+                  <h3>
+                    <span id="ba">
+                      <span class="var">if</span> (<span class="input">project</span> == <a href="https://maxnoahb.github.io/CS171-Final-Project-Spotify/" target="_blank"><span class="string">'Boston Auxilium'</span></a>){<span id="ba-info">...</span>}
+                    </span>
+                  </h3>
                 </div>
               </div>
               <div class="row">
@@ -76,26 +87,23 @@
               </div>
             </div>
         </section>
-<!-- 
-        <a href="https://github.com/maxnoahb/CS171-Final-Project-Spotify" target="_blank"><h3>What in the World Are You Listening To?</h3></a>
-        <p><br><i>Which countries listen to the same songs and what might that say about the state of those areas? Which artists are popular globally and what is it that makes them so universally loved?</i><br><br>For this project, my team and I used Spotify data and data visualization techniques to analyze popular music around the world and find a common thread among popular music around the world.</p> -->
+
 
         <!-- Contact me -->
         <section class="vertical-scrolling fp-auto-height-responsive" id="4">
             <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+
+                </div>
+              </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="section-head">
-                          <h2>Contact me</h2>
-                        </div>
-                        <div class=""><p><b>Music is a universal language.</b> It brings us joy, triggers memories, and encourages us to
-                        dance. Our music listening habits reflect our lives: what time of year it is, what mood we're in,
-                        what language we speak, or how energetic we may be. <br><br>
-                        This is why we're interested in exploring music data. To explore what others are listening to is to
-                        explore so much more about how people are feeling right now. <b>Which countries listen to the same
-                                songs</b> and what might that say about the state of those areas? <b>Which artists are popular globally</b>
-                        and what is it that makes them so universally loved? We hope to dive into these questions and more
-                            as we take you through the <b>top songs</b> in each of the <b>61 countries</b> that listen to Spotify.</p></div>
+                      <h3 id="contact">
+                        <a href="https://www.facebook.com/profile.php?id=100032046551503" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/jfgonzalez99?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="justingonzalez@college.harvard.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+                      </h3>
                     </div>
                 </div>
             </div>
