@@ -25,10 +25,6 @@ p {
   font-size: 18px;
 }
 
-/* a {
-  color: #DFE1E8;
-} */
-
 a:hover {
   text-decoration: none;
 }
@@ -43,6 +39,19 @@ a i {
 
 a i:hover {
   color: #8FA1B3;
+}
+
+#contact {
+  font-size: 80px;
+  padding-top: 15px;
+}
+
+#witw, #sw, #sb {
+  cursor: pointer;
+}
+
+#witw-info, #sw-info, #sb-info {
+  font-size: 28px;
 }
 
 /****** Syntax highlighting ******/
@@ -64,6 +73,9 @@ a i:hover {
 .input {
   color: #EBCB8B;
 }
+.comment {
+  color: #65737E;
+}
 
 ::selection {
   background: #C0C5CE; /* WebKit/Blink Browsers */
@@ -71,21 +83,6 @@ a i:hover {
 ::-moz-selection {
   background: #C0C5CE; /* Gecko Browsers */
 }
-
-
-#contact {
-  font-size: 80px;
-  padding-top: 15px;
-}
-
-#witw, #sw, #sb {
-  cursor: pointer;
-}
-
-#witw-info, #sw-info, #sb-info {
-  font-size: 28px;
-}
-
 
 /****** Banner ******/
 #menu {
@@ -135,29 +132,6 @@ a i:hover {
 .info {
   max-width: 291px;
   text-align: justify;
-}
-
-/****** Unordered list ******/
-ul.traits {
-  list-style-type: none;
-  padding-left: 0;
-  font-size: 28px;
-}
-
-li.se {
-  color: #E77368;
-}
-
-li.ds {
-  color: #7DCAA7;
-}
-
-li.des {
-  color: #FBCC42;
-}
-
-li.chr {
-  color: #7FA3D6;
 }
 
 /****** fullPage css ******/
