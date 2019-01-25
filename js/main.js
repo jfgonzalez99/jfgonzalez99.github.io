@@ -1,20 +1,28 @@
 /* main JS file */
-var clickCount = 0;
-
-var witwText = [
-  "<br><div class='indent'><span class='function'>print</span>(<span class='string'>'Which artists are popular globally and what is it that makes them so universally loved? For this project, my team and I used Spotify data and visualization techniques to analyze popular music around the world and find a common thread.'</span>);<br><a href='https://maxnoahb.github.io/CS171-Final-Project-Spotify/' target='_blank'><span class='function'>whatInTheWorld</span></a>();</div>",
-  "..."
-];
-
-var sbText = [
-  "<br><div class='indent'><span class='function'>print</span>(<span class='string'>'A short video game that incapsulates the frustration of trying to find success in the American education system as a mixed ethnicity student. In my game, I force the player to take on my own perspective as they traverse the American K-12 education system and strive for what is the ultimate \"success\" of a student: admission to Harvard University.'</span>);<br><a href='https://jfgonzalez99.github.io/StraddlingBoundaries/' target='_blank'><span class='function'>straddlingBoundaries</span></a>();</div>",
-  "..."
-];
-
-var baText = [
-  "<br><div class='indent'><span class='function'>print</span>(<span class='string'>'Which artists are popular globally and what is it that makes them so universally loved? For this project, my team and I used Spotify data and visualization techniques to analyze popular music around the world and find a common thread.'</span>);<br><a href='https://maxnoahb.github.io/CS171-Final-Project-Spotify/' target='_blank'><span class='function'>whatInTheWorld</span></a>();</div>",
-  "..."
-];
+var projectNames = ['witw', 'sb', 'sw'];
+var projects = {
+      witw: {
+        status: 0,
+        text: [
+          "<br><div class='indent'><span class='function'>print</span>(<span class='string'>'Which artists are popular globally and what is it that makes them so universally loved? For this project, my team and I used Spotify data and visualization techniques to analyze popular music around the world and find a common thread.'</span>);<br><a href='https://maxnoahb.github.io/CS171-Final-Project-Spotify/' target='_blank'><span class='function'>whatInTheWorld</span></a>();</div>",
+          "..."
+        ]
+      },
+      sb: {
+        status: 0,
+        text: [
+          "<br><div class='indent'><span class='function'>print</span>(<span class='string'>'A short video game that incapsulates the frustration of trying to find success in the American education system as a mixed ethnicity student. In my game, I force the player to take on my own perspective as they traverse the American K-12 education system and strive for what is the ultimate \"success\" of a student: admission to Harvard University.'</span>);<br><a href='https://jfgonzalez99.github.io/StraddlingBoundaries/' target='_blank'><span class='function'>straddlingBoundaries</span></a>();</div>",
+          "..."
+        ]
+      },
+      sw: {
+        status: 0,
+        text: [
+          "<br><div class='indent'><span class='function'>print</span>(<span class='string'>'Which artists are popular globally and what is it that makes them so universally loved? For this project, my team and I used Spotify data and visualization techniques to analyze popular music around the world and find a common thread.'</span>);<br><a href='https://maxnoahb.github.io/CS171-Final-Project-Spotify/' target='_blank'><span class='function'>whatInTheWorld</span></a>();</div>",
+          "..."
+        ]
+      },
+    };
 
 
 $(document).ready(function() {
@@ -26,24 +34,41 @@ $(document).ready(function() {
         controlArrows: true,
         menu: '#myNavbar',
         touchSensitivity: 15,
-        anchors: ['hello', 'about-me', 'my-projects', 'contact-me'],
-        navigationTooltips: ['hello', 'about-me', 'my-projects', 'contact-me']
+        anchors: ['hello', 'about-me', 'my-projects', 'contact-me', 'closing-tag'],
+        navigationTooltips: ['hello', 'about-me', 'my-projects', 'contact-me', 'closing-tag']
     });
 
+    function open(project) {
+      var state = projects[project].status;
+      var arr = projectNames;
+      arr = arr.filter(e => e !== project);
+      // console.log(arr);
 
+      if (projects[arr[0]].status) {
+        open(arr[0]);
+      }
+      if (projects[arr[1]].status) {
+        open(arr[1]);
+      }
+
+      $('#' + project + '-info').html(projects[project].text[state]);
+      if (state == 0) {
+        projects[project].status = 1;
+      } else {
+        projects[project].status = 0;
+      }
+
+      // console.log(state);
+    }
 
     $('#witw').click(function() {
-      $('#witw-info').html(witwText[clickCount % 2]);
-      clickCount += 1;
-      console.log(clickCount);
+      open('witw');
     });
-
-    $('#sb').mouseover(function() {
-      $('#sb-info').text('A short video game that incapsulates the frustration of trying to find success in the American education system as a mixed ethnicity student. In my game, I force the player to take on my own perspective as they traverse the American K-12 education system and strive for what is the ultimate "success" of a student: admission to Harvard University.');
+    $('#sb').click(function() {
+      open('sb');
     });
-
-    $('#sb').mouseout(function() {
-      $('#sb-info').text('...');
+    $('#sw').click(function() {
+      open('sw');
     });
 
 });
@@ -61,7 +86,7 @@ function helloWorld() {
     },
     interests: ['puzzles', 'photography', 'movies', 'Chance the Rapper']
   }
-  console.log(me.education.school);
+  // console.log(me.education.school);
 }
 
 helloWorld();
