@@ -126,6 +126,7 @@ a i:hover {
 }
 .comment {
   color: #65737E;
+  font-size: 75px;
 }
 
 ::selection {

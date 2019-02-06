@@ -86,7 +86,6 @@ function helloWorld() {
     },
     interests: ['puzzles', 'photography', 'movies', 'Chance the Rapper']
   }
-  // console.log(me.education.school);
 }
 
 helloWorld();
