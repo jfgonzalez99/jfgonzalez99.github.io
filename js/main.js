@@ -42,7 +42,6 @@ $(document).ready(function() {
       var state = projects[project].status;
       var arr = projectNames;
       arr = arr.filter(e => e !== project);
-      // console.log(arr);
 
       if (projects[arr[0]].status) {
         open(arr[0]);
@@ -58,7 +57,6 @@ $(document).ready(function() {
         projects[project].status = 0;
       }
 
-      // console.log(state);
     }
 
     $('#witw').click(function() {
@@ -69,6 +67,11 @@ $(document).ready(function() {
     });
     $('#sw').click(function() {
       open('sw');
+    });
+    $('#jer').hover(function() {
+      $('#jer').text('// For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future.')
+    }, function() {
+      $('#jer').text('// JER 29:11')
     });
 
 });
