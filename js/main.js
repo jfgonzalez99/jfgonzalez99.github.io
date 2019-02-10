@@ -18,7 +18,7 @@ var projects = {
       sw: {
         status: 0,
         text: [
-          "<br><div class='indent'><span class='function'>print</span>(<span class='string'>'Which artists are popular globally and what is it that makes them so universally loved? For this project, my team and I used Spotify data and visualization techniques to analyze popular music around the world and find a common thread.'</span>);<br><a href='https://maxnoahb.github.io/CS171-Final-Project-Spotify/' target='_blank'><span class='function'>whatInTheWorld</span></a>();</div>",
+          "<br><div class='indent'><a href='https://github.com/jfgonzalez99?tab=repositories'><span class='function'>otherProjects</span></a>();</div>",
           "..."
         ]
       },
