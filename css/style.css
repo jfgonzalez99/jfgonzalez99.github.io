@@ -47,11 +47,11 @@ a i:hover {
   padding-top: 15px;
 }
 
-#witw, #bd, #sw, #sb {
+#witw, #bD, #sw, #sb {
   cursor: pointer;
 }
 
-#witw-info, #bd-info, #sw-info, #sb-info {
+#witw-info, #bD-info, #sw-info, #sb-info {
   font-size: 28px;
 }
 

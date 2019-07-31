@@ -78,7 +78,7 @@ $(document).ready(function() {
     $('#sw').click(function() {
       open('sw');
     });
-    $('#jer').click(function() {
+    $('#jer').hover(function() {
       $('#jer').text('// For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future.')
     }, function() {
       $('#jer').text('// JER 29:11')
