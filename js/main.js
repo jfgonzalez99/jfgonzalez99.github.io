@@ -1,5 +1,5 @@
 /* main JS file */
-var projectNames = ['witw', 'sb', 'sw'];
+var projectNames = ['witw', 'bD', 'sb', 'sw'];
 var projects = {
       witw: {
         status: 0,
