@@ -8,6 +8,13 @@ var projects = {
           "..."
         ]
       },
+      bD: {
+        status: 0,
+        text: [
+          "<br><div class='indent'><span class='function'>print</span>(<span class='string'>'A python library for big data analysis. This package is a collection of functions that I have found to be useful in my coursework on big data and machine learning.'</span>);<br><a href='https://github.com/jfgonzalez99/bigDATA' target='_blank'><span class='function'>bigDATA</span></a>();</div>",
+          "..."
+        ]
+      },
       sb: {
         status: 0,
         text: [
@@ -62,13 +69,16 @@ $(document).ready(function() {
     $('#witw').click(function() {
       open('witw');
     });
+    $('#bD').click(function () {
+      open('bD');
+    });
     $('#sb').click(function() {
       open('sb');
     });
     $('#sw').click(function() {
       open('sw');
     });
-    $('#jer').hover(function() {
+    $('#jer').click(function() {
       $('#jer').text('// For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future.')
     }, function() {
       $('#jer').text('// JER 29:11')
@@ -78,17 +88,17 @@ $(document).ready(function() {
 
 
 
-function helloWorld() {
-  var me = {
-    name: 'Justin',
-    home: 'Hendersonville, NC',
-    education: {
-      school: 'Harvard College',
-      class: 2021,
-      concentration: 'Applied Mathematics: Data Science'
-    },
-    interests: ['puzzles', 'photography', 'movies', 'Chance the Rapper']
-  }
-}
+// function helloWorld() {
+//   var me = {
+//     name: 'Justin',
+//     home: 'Hendersonville, NC',
+//     education: {
+//       school: 'Harvard College',
+//       class: 2021,
+//       concentration: 'Computer Science'
+//     },
+//     interests: ['puzzles', 'photography', 'movies', 'Chance the Rapper']
+//   }
+// }
 
-helloWorld();
+// helloWorld();
