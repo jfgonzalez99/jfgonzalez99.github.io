@@ -1,6 +1,34 @@
 /* main JS file */
-var projectNames = ['witw', 'bD', 'sb', 'sw'];
+var projectNames = ['ibm','hgem','hsa','dlp','witw', 'bD', 'sb', 'sw'];
 var projects = {
+      ibm: {
+        status: 0,
+        text: [
+          "<div class='indent'><span class='property'>time</span>: <span class='string'>'June 2019 - August 2019'</span>,<br><span class='property'>responsibilities</span>: [<br><div class='indent'><span class='string'>'Learned <strong>Docker</strong> and <strong>Shell Scripting</strong> in first two weeks to create a rootless containerized build of IBM’s Financial Transaction Manager and reduced container image sizes by 1.6 GB'</span>,<br><span class='string'>'Utilized <strong>SOAP</strong> calls to create custom <strong>Java</strong> methods for an Early Warning Services emulator to programmatically test for fraudulent Zelle transactions'</span>,<br><span class='string'>'More @ <a href='https://jfgonzalez.github.io/My-IBM-Internship'>/My-IBM-Internship</a>'</span><br></div>]</div>",
+          "..."
+        ]
+      },
+      hgem: {
+        status: 0,
+        text: [
+          "<div class='indent'><span class='property'>time</span>: <span class='string'>'February 2018 - Present'</span>,<br><span class='property'>responsibilities</span>: [<br><div class='indent'><span class='string'>'Designed the organization’s website (<a href='https://www.hgem.org'>hgem.org</a>) which accumulated over 4,100 unique visitors and $29,000 in e-commerce revenue'</span>,<br><span class='string'>'Designed logos and conference materials, took team headshots, and documented our Dubai Innovation Challenge'</span><br></div>]</div>",
+          "..."
+        ]
+      },
+      hsa: {
+        status: 0,
+        text: [
+          "<div class='indent'><span class='property'>time</span>: <span class='string'>'April 2019 - Present'</span>,<br><span class='property'>responsibilities</span>: [<br><div class='indent'><span class='string'>'Wrote <strong>Python</strong> scripts that utilized <strong>REST APIs</strong> to reduce onboarding and offboarding times by 30 minutes'</span>,<br><span class='string'>'Propose any new hardware or software initiatives to make the company more efficient'</span><br></div>]</div>",
+          "..."
+        ]
+      },
+      dlp: {
+        status: 0,
+        text: [
+          "<div class='indent'><span class='property'>time</span>: <span class='string'>'September 2018 - May 2019'</span>,<br><span class='property'>responsibilities</span>: [<br><div class='indent'><span class='string'>'Taught computer science to middle schoolers in under-served communities in Boston'</span>,<br><span class='string'>'Recruited fellow student teachers'</span><br></div>]</div>",
+          "..."
+        ]
+      },
       witw: {
         status: 0,
         text: [
@@ -28,7 +56,7 @@ var projects = {
           "<br><div class='indent'><a href='https://github.com/jfgonzalez99?tab=repositories'><span class='function'>otherProjects</span></a>();</div>",
           "..."
         ]
-      },
+      }
     };
 
 
@@ -41,8 +69,8 @@ $(document).ready(function() {
         controlArrows: true,
         menu: '#myNavbar',
         touchSensitivity: 15,
-        anchors: ['hello', 'about-me', 'my-projects', 'contact-me', 'closing-tag'],
-        navigationTooltips: ['hello', 'about-me', 'my-projects', 'contact-me', 'closing-tag']
+        anchors: ['hello', 'about-me', 'experience', 'my-projects', 'contact-me', 'closing-tag'],
+      navigationTooltips: ['hello', 'about-me', 'experience', 'my-projects', 'contact-me', 'closing-tag']
     });
 
     function open(project) {
@@ -66,6 +94,18 @@ $(document).ready(function() {
 
     }
 
+    $('#ibm').click(function() {
+      open('ibm');
+    });
+    $('#hgem').click(function () {
+      open('hgem');
+    });
+    $('#hsa').click(function () {
+      open('hsa');
+    });
+    $('#dlp').click(function () {
+      open('dlp');
+    });
     $('#witw').click(function() {
       open('witw');
     });

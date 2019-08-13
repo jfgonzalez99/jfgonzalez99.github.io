@@ -42,16 +42,24 @@ a i:hover {
   color: #8FA1B3;
 }
 
+.string a {
+  color: rgb(128, 146, 112);
+}
+
+.string a:hover {
+  color: rgb(195, 228, 167);
+}
+
 #contact {
   font-size: 80px;
   padding-top: 15px;
 }
 
-#witw, #bD, #sw, #sb {
+#ibm, #hgem, #hsa, #dlp, #witw, #bD, #sw, #sb {
   cursor: pointer;
 }
 
-#witw-info, #bD-info, #sw-info, #sb-info {
+#ibm-info, #hgem-info, #hsa-info, #dlp-info, #witw-info, #bD-info, #sw-info, #sb-info {
   font-size: 28px;
 }
 
