@@ -4,7 +4,7 @@ var projects = {
       ibm: {
         status: 0,
         text: [
-          "<div class='indent'><span class='property'>time</span>: <span class='string'>'June 2019 - August 2019'</span>,<br><span class='property'>responsibilities</span>: [<br><div class='indent'><span class='string'>'Learned <strong>Docker</strong> and <strong>Shell Scripting</strong> in first two weeks to create a rootless containerized build of IBM’s Financial Transaction Manager and reduced container image sizes by 1.6 GB'</span>,<br><span class='string'>'Utilized <strong>SOAP</strong> calls to create custom <strong>Java</strong> methods for an Early Warning Services emulator to programmatically test for fraudulent Zelle transactions'</span>,<br><span class='string'>'More @ <a href='https://jfgonzalez.github.io/My-IBM-Internship'>/My-IBM-Internship</a>'</span><br></div>]</div>",
+          "<div class='indent'><span class='property'>time</span>: <span class='string'>'June 2019 - August 2019'</span>,<br><span class='property'>responsibilities</span>: [<br><div class='indent'><span class='string'>'Learned <strong>Docker</strong> and <strong>Shell Scripting</strong> in first two weeks to create a rootless containerized build of IBM’s Financial Transaction Manager and reduced container image sizes by 1.6 GB'</span>,<br><span class='string'>'Utilized <strong>SOAP</strong> calls to create custom <strong>Java</strong> methods for an Early Warning Services emulator to programmatically test for fraudulent Zelle transactions'</span>,<br><span class='string'>'More @ <a href='https://jfgonzalez99.github.io/My-IBM-Internship/'>/My-IBM-Internship</a>'</span><br></div>]</div>",
           "..."
         ]
       },
