@@ -78,14 +78,16 @@ $(document).ready(function() {
       var arr = projectNames;
       arr = arr.filter(e => e !== project);
 
-      if (projects[arr[0]].status) {
-        open(arr[0]);
-      }
-      if (projects[arr[1]].status) {
-        open(arr[1]);
-      }
+      // Ensure other projects close
+      arr.forEach(p => {
+        if (projects[p].status) {
+          open(p)
+        }
+      });
 
+      // Open/close projects
       $('#' + project + '-info').html(projects[project].text[state]);
+      // Change state of project
       if (state == 0) {
         projects[project].status = 1;
       } else {
