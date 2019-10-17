@@ -1,5 +1,5 @@
 /* main JS file */
-var projectNames = ['ibm','hgem','hsa','dlp','witw', 'bD', 'sb', 'sw'];
+var projectNames = ['ibm','hsa','hgem','dlp','witw', 'bD', 'sb', 'sw'];
 var projects = {
       ibm: {
         status: 0,
@@ -96,30 +96,12 @@ $(document).ready(function() {
 
     }
 
-    $('#ibm').click(function() {
-      open('ibm');
+    projectNames.forEach(project => {
+      $('#' + project).click(function() {
+        open(project);
+      });
     });
-    $('#hgem').click(function () {
-      open('hgem');
-    });
-    $('#hsa').click(function () {
-      open('hsa');
-    });
-    $('#dlp').click(function () {
-      open('dlp');
-    });
-    $('#witw').click(function() {
-      open('witw');
-    });
-    $('#bD').click(function () {
-      open('bD');
-    });
-    $('#sb').click(function() {
-      open('sb');
-    });
-    $('#sw').click(function() {
-      open('sw');
-    });
+    
     $('#jer').hover(function() {
       $('#jer').text('// For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future.')
     }, function() {
