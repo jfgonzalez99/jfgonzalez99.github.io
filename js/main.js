@@ -101,7 +101,7 @@ $(document).ready(function() {
         open(project);
       });
     });
-    
+
     $('#jer').hover(function() {
       $('#jer').text('// For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future.')
     }, function() {
@@ -109,20 +109,3 @@ $(document).ready(function() {
     });
 
 });
-
-
-
-// function helloWorld() {
-//   var me = {
-//     name: 'Justin',
-//     home: 'Hendersonville, NC',
-//     education: {
-//       school: 'Harvard College',
-//       class: 2021,
-//       concentration: 'Computer Science'
-//     },
-//     interests: ['puzzles', 'photography', 'movies', 'Chance the Rapper']
-//   }
-// }
-
-// helloWorld();
