@@ -8,17 +8,17 @@ var projects = {
           "..."
         ]
       },
-      hgem: {
-        status: 0,
-        text: [
-          "<div class='indent'><span class='property'>time</span>: <span class='string'>'February 2018 - Present'</span>,<br><span class='property'>responsibilities</span>: [<br><div class='indent'><span class='string'>'Designed the organization’s website (<a href='https://www.hgem.org' target='_blank'>hgem.org</a>) which accumulated over 4,100 unique visitors and $29,000 in e-commerce revenue'</span>,<br><span class='string'>'Designed logos and conference materials, took team headshots, and documented our Dubai Innovation Challenge'</span><br></div>]</div>",
-          "..."
-        ]
-      },
       hsa: {
         status: 0,
         text: [
           "<div class='indent'><span class='property'>time</span>: <span class='string'>'April 2019 - Present'</span>,<br><span class='property'>responsibilities</span>: [<br><div class='indent'><span class='string'>'Wrote <strong>Python</strong> scripts that utilized <strong>REST APIs</strong> to reduce onboarding and offboarding times by 30 minutes'</span>,<br><span class='string'>'Propose any new hardware or software initiatives to make the company more efficient'</span><br></div>]</div>",
+          "..."
+        ]
+      },
+      hgem: {
+        status: 0,
+        text: [
+          "<div class='indent'><span class='property'>time</span>: <span class='string'>'February 2018 - September 2019'</span>,<br><span class='property'>responsibilities</span>: [<br><div class='indent'><span class='string'>'Designed the organization’s website (<a href='https://www.hgem.org' target='_blank'>hgem.org</a>) which accumulated over 4,100 unique visitors and $29,000 in e-commerce revenue'</span>,<br><span class='string'>'Designed logos and conference materials, took team headshots, and documented our Dubai Innovation Challenge'</span><br></div>]</div>",
           "..."
         ]
       },
