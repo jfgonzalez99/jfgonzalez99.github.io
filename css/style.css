@@ -55,11 +55,11 @@ a i:hover {
   padding-top: 15px;
 }
 
-#ibm, #hgem, #hsa, #dlp, #witw, #bD, #sw, #sb {
+#ibm, #hgem, #hsa, #dlp, #vg, #witw, #bD, #sw, #sb {
   cursor: pointer;
 }
 
-#ibm-info, #hgem-info, #hsa-info, #dlp-info, #witw-info, #bD-info, #sw-info, #sb-info {
+#ibm-info, #hgem-info, #hsa-info, #dlp-info, #vg-info, #witw-info, #bD-info, #sw-info, #sb-info {
   font-size: 28px;
 }
 
