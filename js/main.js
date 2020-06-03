@@ -1,5 +1,5 @@
 /* main JS file */
-var projectNames = ['ibm','hsa','hgem','dlp','vg','witw', 'bD', 'sb', 'sw'];
+var projectNames = ['ar','ibm','hsa','hgem','dlp','vg','witw', 'bD', 'sb', 'sw'];
 // Import project info from content.json
 var projects = (function() {
   var projects = null;
@@ -58,10 +58,10 @@ $(document).ready(function() {
       });
     });
 
-    $('#jer').hover(function() {
-      $('#jer').text('// For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future.')
+    $('#verse').hover(function() {
+      $('#verse').text('// And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him.')
     }, function() {
-      $('#jer').text('// JER 29:11')
+      $('#verse').text('// Colossians 3:17')
     });
 
 });

@@ -1,4 +1,11 @@
 {
+    "ar": {
+      "status": 0,
+      "text": [
+        "<div class='indent'><span class='property'>time</span>: <span class='string'>'May 2020 - Present'</span>,<br><span class='property'>responsibilities</span>: [<br><div class='indent'><span class='string'>'Responsible for developing tools to be used across all QA teams to automate the quality assurance process'</span><br></div>]</div>",
+        "..."
+      ]
+    },
     "ibm": {
       "status": 0,
       "text": [
